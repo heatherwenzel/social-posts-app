@@ -1,0 +1,15 @@
+<p class="title">My Thoughts</p>
+
+<button (click)="toggleForm()" class="newThoughtButton">
+  New Thought
+</button>
+
+<post-form *ngIf="show" (submitted)="onSubmit($event)"></post-form>
+
+<section class="socialPosts">
+  <post *ngFor="let post of posts; index as i" [post]="post">
+    <i (click)="removePost(i)" class="material-icons">
+      close
+    </i>
+  </post>
+</section>
