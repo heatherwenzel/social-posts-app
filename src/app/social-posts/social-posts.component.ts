@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+//imports the interface for all posts
 import { PostInterface } from '../post-interface';
 
 @Component({
@@ -8,8 +9,10 @@ import { PostInterface } from '../post-interface';
 })
 export class SocialPostsComponent implements OnInit {
 
+  //shows or hides the new post form when clicked/hides the new post form when submitted
   show: boolean = false;
 
+  //creates 2 new instances of the post interface
   posts: PostInterface[] = [
     {
       title: "Dog",
@@ -23,15 +26,18 @@ export class SocialPostsComponent implements OnInit {
 
   constructor() { }
 
+  //toggles whether the new post form is showing or hiding when clicked
+  toggleForm(): void {
+    this.show = !this.show;
+  }
+  
+  //takes in the form submission event as an argument, adds the new post to the beginning of the posts array, and hides the new post form
   onSubmit(post: PostInterface): void {    
     this.posts.unshift(post);
     this.show = false;
   }
 
-  toggleForm(): void {
-    this.show = !this.show;
-  }
-
+  //removes the post at the index clicked by splicing the posts array
   removePost(index: number): void {
     this.posts.splice(index, 1);
   }

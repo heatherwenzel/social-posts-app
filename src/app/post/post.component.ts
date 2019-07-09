@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+//imports the interface for all posts
 import { PostInterface } from '../post-interface';
 
 @Component({
