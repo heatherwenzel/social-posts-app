@@ -10,7 +10,7 @@ import { PostInterface } from '../post-interface';
 export class SocialPostsComponent implements OnInit {
 
   //shows or hides the new post form when clicked/hides the new post form when submitted
-  show: boolean = false;
+  show: boolean = true;
 
   //creates 2 new instances of the post interface
   posts: PostInterface[] = [
