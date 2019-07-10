@@ -1,13 +1,13 @@
 <p class="title">What's on your mind?</p>
 
 <button (click)="toggleForm()" class="newThoughtButton">
-  New Thought
+  New thought
 </button>
 
 <post-form *ngIf="show" (submitted)="onSubmit($event)"></post-form>
 
-<div *ngFor="let post of posts; index as i">
-  <p>{{ post.title }}</p>
-  <p>{{ post.thought }}</p>
+<div class="post" *ngFor="let post of posts; index as i">
+  <p class="postTitle">{{ post.title }}</p>
+  <p class="postContent">{{ post.thought }}</p>
   <i (click)="removePost(i)" class="material-icons">delete</i>
 </div>

@@ -1,6 +1,47 @@
 .title {
+  color: white;
   font-family: 'DM Serif Display', serif;
   font-size: 3em;
+  margin: 30px 0 18px 0;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  font-size: 1em;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #212CFF;
+  color: white;
+  margin: 10px 0;
+}
+
+.post {
+  position: relative;
+  background-color: white;
+  border-radius: 5px;
+  padding: 1px 20px;
+  margin: 20px 0;
+}
+
+.postTitle {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.postContent {
+  margin: 4px 0 26px 0;
+}
+
+.material-icons {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 20px;
 }
 
 /* .title {
