@@ -6,8 +6,10 @@
 
 <post-form *ngIf="show" (submitted)="onSubmit($event)"></post-form>
 
+<div class="userThoughts">
 <div class="post" *ngFor="let post of posts; index as i">
   <p class="postTitle">{{ post.title }}</p>
   <p class="postContent">{{ post.thought }}</p>
   <i (click)="removePost(i)" class="material-icons">delete</i>
+</div>
 </div>
