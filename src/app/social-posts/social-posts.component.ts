@@ -15,12 +15,28 @@ export class SocialPostsComponent implements OnInit {
   //creates 2 new instances of the post interface
   posts: PostInterface[] = [
     {
-      title: "Dog",
-      thought: "Candy jelly beans jelly-o sugar plum fruitcake. Jelly-o soufflé powder donut biscuit lollipop. Carrot cake sesame snaps toffee carrot cake chocolate cake bear claw gummies tiramisu gummies. Chupa chups cake pie cheesecake pastry sesame snaps bonbon caramels."
+      title: "Fidget spinners",
+      thought: "It makes sense that the target audience for fidget spinners lost interest in them so quickly"
     },
     {
-      title: "Cat",
-      thought: "Candy jelly beans jelly-o sugar plum fruitcake. Jelly-o soufflé powder donut biscuit lollipop. Carrot cake sesame snaps toffee carrot cake chocolate cake bear claw gummies tiramisu gummies. Chupa chups cake pie cheesecake pastry sesame snaps bonbon caramels."
+      title: "Almost died",
+      thought: "It would be cool if after you died, you could see the top 5 times you almost died"
+    },
+    {
+      title: "Royal spiders",
+      thought: "The spiders that live in Buckingham Palace now are probably the descendants of the spiders that lived there during Victorian times"
+    },
+    {
+      title: "Helium surprise",
+      thought: "The first person who inhaled helium must have been so relieved when the effects wore off"
+    },
+    {
+      title: "Nice catch",
+      thought: "Posting a newborn’s weight and length makes childbirth rather too similar to fishing"
+    },
+    {
+      title: "Sunny what?",
+      thought: "Sunny D tastes like someone made a bet that they could make orange juice without oranges"
     }
   ];
 
