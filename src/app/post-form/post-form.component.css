@@ -33,45 +33,11 @@ button {
   width: 156.83px;
 }
 
-/* .form {
-  background-color: #B1DDEA;
-  height: 50vh;
-  border: 1px solid black;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  padding: 10px 40px;
-  margin-bottom: 20px;
+@media screen and (min-width: 768px) {  
+  form {
+    width: 45%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
-
-.formLabel {
-  margin: 8px 0;
-  font-size: 18px;
-}
-
-.titleInput {
-  border: 1px solid black;
-  border-radius: 5px;
-  height: 90px;
-  padding: 5px;
-  font-family: 'Dosis', sans-serif;
-  font-size: 14px;
-}
-
-.thoughtInput {
-  border: 1px solid black;
-  border-radius: 5px;
-  height: 300px;
-  font-family: 'Dosis', sans-serif;
-  font-size: 14px;
-}
-
-.addPostButton {
-  padding: 6px 0;
-  border: 1px solid black;
-  border-radius: 5px;
-  margin-top: 10px;
-  font-family: 'Dosis', sans-serif;
-  font-size: 16px;
-}
- */
