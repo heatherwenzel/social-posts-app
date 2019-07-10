@@ -46,7 +46,8 @@ button {
 }
 
 img {
-  width: 100%;
+  width: 80%;
+  float: right;
   margin: 40px 0 10px 0;
 }
 
@@ -63,12 +64,15 @@ img {
 
   img {
     width: 50%;
-    float: right;
   }
 }
 
 @media screen and (min-width: 992px) {
   .post {
     width: 27%;
+  }
+
+  img {
+    width: 40%;
   }
 }
